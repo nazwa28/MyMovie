@@ -1,25 +1,31 @@
 .poster {
     width: 1500px;
-    height: 700px;
+    height: 4800px;
+    margin-left: 220px;
 }
 
 .posterImage {
     width: 1500px;
-    height: 700px;
+    height: 680px;
+    margin-top: 180px;
+}
+
+.img {
+    border-radius: 20px;
 }
 
 .posterImage > img {
     border-radius: 20px;
-    margin-right: 30px;
     display: block;
     width: 100%;
 }
 
 .posterImage_overlay {
+    border-radius: 20px;
     position: absolute;
     padding: 5rem;
     bottom: 0px;
-    height: 200%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -31,12 +37,12 @@
 }
 
 .posterImage_overlay:hover {
-    opacity: 1;
+    opacity: 3;
 }
 
 .posterImage_title {
     font-weight: 900;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 0.4rem;
     text-align: left;
 }
@@ -54,9 +60,57 @@
 .posterImage_description {
     margin-top: 3rem;
     font-style: italic;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     margin-bottom: 0.25rem;
     display: flex;
     text-align: left;
     width: 50%;
+}
+
+.popular {
+    margin-top: 20px;
+}
+ 
+@media (max-width: 768px) {
+ .poster {
+    width: 95.5%;
+    height: 10%;
+    margin-left: 30px;
+ }   
+
+ .posterImage {
+    width: 700px;
+    height: 380px;
+    }
+
+    .posterImage_overlay {
+        padding: 2rem;
+        width: 700px;
+        height:  380px;
+        border-radius: 20;
+        display: flex;
+    }
+
+    .posterImage_title {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    .posterImage_runtime {
+        font-size: 3rem;
+        margin-left: 7rem;
+    }
+
+    .posterImage_rating {
+    font-size: 1rem;
+    }
+
+    .posterImage_description {
+        font-size: 1rem;
+        width: 70%;
+        margin-top: 16px;
+    }
+    .popular {
+        margin-top: 1px;
+    }
 }

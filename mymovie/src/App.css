@@ -1,6 +1,12 @@
 .App {
-  
-  background-color: black;
+  background-color: #100F0F;
   color: white;
   font-family: sans-serif;
+}
+
+/* ---------- Responsive  ---------- */
+@media (max-width: 768px) {
+  .App {
+    background-color: #2C3639;
+  }
 }

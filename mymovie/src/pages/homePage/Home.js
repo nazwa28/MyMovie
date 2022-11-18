@@ -46,7 +46,11 @@ const Home = () => {
             ))
           }
         </Carousel>
-        <MovieList />
+        
+        <div className='popular'>
+          <MovieList />
+        </div>
+        
       </div>
     </>
   )

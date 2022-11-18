@@ -11,10 +11,12 @@
 }
 
 .movie_backdrop {
+    margin-top: 160px;
     width: 100%;
-    height: 500px;
+    height: 650px;
     object-fit: cover;
-    object-position: 0 35%;
+    object-position: 0 10%;
+    border-radius: 10px;
 }
 
 .movie_detail {
@@ -22,7 +24,7 @@
     width: 75%;
     display: flex;
     position: relative;
-    bottom: 25px;
+    bottom: 275px;
 }
 
 .movie_detailLeft {
@@ -32,7 +34,7 @@
 .movie_poster {
     width: 300px;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0) 0px 22px 40px 6px;
+    box-shadow: rgba(0, 0, 0, 86) 0px 22px 40px 6px;
 }
 
 .movie_detailRight {
@@ -44,8 +46,8 @@
 }
 
 .movie_detailRightTop > div {
-    text-shadow: 0px 0px #000000;
-    margin-bottom: 5rem;
+    text-shadow: 0px 0px 5px #000000;
+    margin-bottom: .5rem;
 }
 
 .movie_name {
@@ -58,14 +60,14 @@
 }
 
 .movie_genres {
-    margin: 1 .25rem 0;
+    margin: 1.75rem 0;
 }
 
 .movie_genre {
     padding: .5rem;
     border: 2px solid white;
     border-radius: 20px;
-    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .movie_detailRightBottom {
@@ -119,7 +121,7 @@
 }
 
 .newTab {
-    margin-left: 1.4rem;
+    margin-left: 1rem;
 }
 
 .movie_production {
@@ -133,11 +135,46 @@
 .movie_productionCompany {
     width: 200px;
     margin: 2rem;
-}
+}   
 
 .productionCompanyImage {
+    color: #B8390E;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .movie_backdrop {
+        margin-top: 120px;
+        width: 100%;
+        height: 450px;
+    }
+    .movie_poster {
+        width: 200px;
+    }
+    .movie_detailRight {
+        height: 350px;
+        justify-content: space-around;
+    }
+    .movie_name {
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    .movie_detailRightBottom {
+        margin: 1rem 0;
+        flex: 0.2;
+    }
+    
+    .synopsisText {
+        font-size: 1.5rem;
+        margin-bottom: .25rem;
+        font-weight: 600;
+    }
+    .detailTeks {
+        font-size: 13px;
+    }
+
+  
 }

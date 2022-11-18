@@ -20,49 +20,50 @@ const MovieDetail = () => {
 
     return (
        <div className="movie">
-        <div className="movie_intro">
-            <img className="movie_backdrop" src={`https://image.tmdb.org/t/p/original${currentMovieDetail ? currentMovieDetail.poster_path:""}`}/>
-        </div>
-
-        <div className="movie_detail">
-            <div className="movie_detailLeft">
-                <div className="movie_posterBox">
-                <img className="movie_poster" src={`https://image.tmdb.org/t/p/original${currentMovieDetail ? currentMovieDetail.poster_path:""}`}/>
-                </div>
+            <div className="movie_intro">
+                <img className="movie_backdrop" src={`https://image.tmdb.org/t/p/original${currentMovieDetail ? currentMovieDetail.backdrop_path:""}`}/>
             </div>
-        </div>
 
-        <div className="movie_detailRight">
-            <div className="movie_detailRightTop">
-                <div className="movie_name">{currentMovieDetail ? currentMovieDetail.original_title: ""}</div>
-                <div className="movie_tagline">{currentMovieDetail ? currentMovieDetail.tagline: ""}</div>
-                <div className="movie_rating">
-                    {currentMovieDetail ? currentMovieDetail.vote_average: ""} <i className="fas fa-star"/>
-                    <span className="movie_voteCount">{currentMovieDetail ? "(" + currentMovieDetail.vote_count + ") votes" : ""}</span>
-                </div>
+            <div className="movie_detail">
+                <div className="movie_detailLeft">
+                    <div className="movie_posterBox">
+                      <img className="movie_poster" src={`https://image.tmdb.org/t/p/original${currentMovieDetail ? currentMovieDetail.poster_path:""}`}/>
+                    </div>
+            </div>
 
-                <div className="movie_runtime">{currentMovieDetail ? currentMovieDetail.runtime + " mins" : ""}</div>
-                <div className="movie_releaseDate">{currentMovieDetail ? "Release date: " + currentMovieDetail.release_date : ""}</div>
-                <div className="movie_genres">
-                    {
-                        currentMovieDetail && currentMovieDetail.genres
-                        ?
-                        currentMovieDetail.genres.map(genre => (
-                            <><span className="movie_genre" id={genre.id}>{genre.name}</span></>
-                        ))
-                        :
-                        ""
-                    }
+            <div className="movie_detailRight">
+                <div className="movie_detailRightTop">
+                    <div className="movie_name">{currentMovieDetail ? currentMovieDetail.original_title: ""}</div>
+                    <div className="movie_tagline">{currentMovieDetail ? currentMovieDetail.tagline: ""}</div>
+                    <div className="movie_rating">
+                        {currentMovieDetail ? currentMovieDetail.vote_average: ""} <i className="fas fa-star"/>
+                        <span className="movie_voteCount">{currentMovieDetail ? "(" + currentMovieDetail.vote_count + ") votes" : ""}</span>
+                    </div>
+
+                    <div className="movie_runtime">{currentMovieDetail ? currentMovieDetail.runtime + " mins" : ""}</div>
+                    <div className="movie_releaseDate">{currentMovieDetail ? "Release date: " + currentMovieDetail.release_date : ""}</div>
+                    <div className="movie_genres">
+                        {
+                            currentMovieDetail && currentMovieDetail.genres
+                            ?
+                            currentMovieDetail.genres.map(genre => (
+                                <><span className="movie_genre" id={genre.id}>{genre.name}</span></>
+                            ))
+                            :
+                            ""
+                        }
                 </div>
             </div>
 
             <div className="movie_detailRightBottom">
                     <div className="synopsisText">Synopsis</div>
-                    <div>{currentMovieDetail ? currentMovieDetail.overview : ""}
-                </div>
+                    <div className="detailTeks">{currentMovieDetail ? currentMovieDetail.overview : ""}</div>
             </div>   
 
+            </div>
         </div>
+
+        {/* ====================== C1 ===================== */}
 
         <div className="movie_links">
             <div className="movie_heading">Usefull links</div>
@@ -77,7 +78,7 @@ const MovieDetail = () => {
         <div className="movie_heading">Production companies</div>
         <div className="movie_production">
             {
-                currentMovieDetail && currentMovieDetail.production_companies && currentMovieDetail.production_companies.map(company => {
+                currentMovieDetail && currentMovieDetail.production_companies && currentMovieDetail.production_companies.map(company => (
                     <>
                         {
                             company.logo_path
@@ -88,7 +89,7 @@ const MovieDetail = () => {
                             </span>
                         }
                     </>
-                })
+                ))
             }
         </div>
     </div>

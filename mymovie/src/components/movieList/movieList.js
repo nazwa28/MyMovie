@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Card from "../card/Card";
 import { useParams  } from "react-router-dom";
+import { Carousel } from "antd";
 
 import "./movieList.css";
 import Cards from "../card/Card";
@@ -25,7 +25,9 @@ const MovieList = () => {
     }
 
     return (
+        
         <div className="movie_list">
+            
             <h2 className="list_title">{(type ?type : "POPULAR").toUpperCase()}</h2>
             <div className="list_cards">
                 {
