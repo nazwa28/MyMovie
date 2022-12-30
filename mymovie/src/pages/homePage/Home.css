@@ -114,3 +114,49 @@
         margin-top: 1px;
     }
 }
+
+
+@media (max-width: 414px) {
+    .poster {
+       width: 85%;
+       height: 10%;
+       margin-top: 20px;
+    }   
+   
+    .posterImage {
+       width: 400px;
+       height: 280px;
+       }
+   
+       .posterImage_overlay {
+           padding: 2rem;
+           width: 400px;
+           height:  280px;
+           border-radius: 20;
+           display: flex;
+       }
+   
+       /* .posterImage_title {
+           font-size: 2rem;
+           font-weight: 400;
+       }
+   
+       .posterImage_runtime {
+           font-size: 3rem;
+           margin-left: 7rem;
+       }
+   
+       .posterImage_rating {
+       font-size: 1rem;
+       }
+   
+       .posterImage_description {
+           font-size: 1rem;
+           width: 70%;
+           margin-top: 16px;
+       } */
+       .popular {
+           width: 350px;
+           height: 1000px;
+       } 
+   }

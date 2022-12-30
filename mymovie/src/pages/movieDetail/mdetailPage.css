@@ -153,17 +153,17 @@
     }
     .movie_poster {
         width: 200px;
+        margin-top: 10px;
     }
     .movie_detailRight {
         height: 350px;
-        justify-content: space-around;
     }
     .movie_name {
         font-weight: 500;
         font-size: 2rem;
     }
     .movie_detailRightBottom {
-        margin: 1rem 0;
+        margin: 3rem 0;
         flex: 0.2;
     }
     

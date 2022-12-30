@@ -65,6 +65,10 @@
     .cards {
         transition: transform .4s;
     }
+    .cards_img {
+        width: 300px;
+        height: 300px;
+    }
     .cards:hover {
         transform: scale(1.4);
     }

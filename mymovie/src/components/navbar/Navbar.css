@@ -63,16 +63,54 @@
     background-color: transparent;
     color: #B8390E;  
   }
+
+  .loginRegister {
+    margin-top: 240px; 
+  }
+
+.btn-login {
+  background-color: transparent;
+  color: #B8390E;  
+  border-color: #B8390E;
+  margin-left: 10px;
+}
+
+.btn-lgn-close {
+  margin-left: 3px; 
+}
+
+.btn-lgn-submit {
+  margin-left: 325px; 
+}
+
+.register {
+  font-size: large;
+  margin-right: 260px; 
+}
   
   @media (max-width: 768px) {
     .navbar {
         background-color: #3F4E4F;
         width: 100%;
-        height: 6%;
+        height: 8%;
     }
     .inputText {
       width: 630px;
       margin-left: 20px;
     }
   
+  }
+
+  @media (max-width: 414px) {
+    .navbar {
+       width: 100%;
+       height: 6%;
+    } 
+    .categories span{
+      font-size: 1rem;
+    }
+    .inputText {
+      width: 290px;
+      margin-left: 10px;
+    }
   }

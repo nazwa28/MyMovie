@@ -6,6 +6,7 @@ import Home from './pages/homePage/Home';
 import MovieList from './components/movieList/movieList';
 import MovieDetail from './pages/movieDetail/mdetailPage';
 import Footer from './components/footer/Footer';
+import loginPage from './components/navbar/loginPage';
 
 function App() {
   return (
