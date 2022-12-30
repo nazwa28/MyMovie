@@ -2,11 +2,9 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form'
-import { useNavigate } from 'react-router-dom';
 
-function LoginPage() {
+function Register() {
   const [show, setShow] = useState(false);
-  const navigate = useNavigate();
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -22,7 +20,7 @@ function LoginPage() {
 
       <Modal show={show} onHide={handleClose} className='loginRegister'>
         <Modal.Header closeButton>
-          <Modal.Title className='textLogin'>Login</Modal.Title>
+          <Modal.Title>Register</Modal.Title>
         </Modal.Header>
         <Modal.Body>
             <Form>
@@ -47,9 +45,9 @@ function LoginPage() {
             </Form>
         </Modal.Body>
         <Modal.Footer>
-            <Form.Text className='register'>
-                Buat Akun Baru? <a href='/' onClick={'/Register'}>Register</a>
-            </Form.Text>
+            {/* <Form.Text className='register'>
+                Buat Akun Baru? <a href='/'>Register</a>
+            </Form.Text> */}
           {/* <Button variant="primary" onClick={handleClose}>
             Save Changes
           </Button> */}
@@ -59,7 +57,7 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default Register;
 
 // import React from 'react';
 

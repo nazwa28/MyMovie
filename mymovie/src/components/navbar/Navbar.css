@@ -59,6 +59,11 @@
     background-color: transparent;
   }
   
+  .textLogin {
+    font-weight: 700;
+    font-size: 26pt;
+  }
+
   .buttonSubmit {
     background-color: transparent;
     color: #B8390E;  
